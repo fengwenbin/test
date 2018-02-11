@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EC203E2-0F7E-486A-BA59-4130A62CD7E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tdps.BLL</RootNamespace>
+    <AssemblyName>tdps.BLL</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\ABC4000_DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BBJYTJBLL.cs" />
+    <Compile Include="ClientVersionBLL.cs" />
+    <Compile Include="DBVersionBLL.cs" />
+    <Compile Include="DLFWQSZBLL.cs" />
+    <Compile Include="DLNSRXXBLL.cs" />
+    <Compile Include="DM_BZBLL.cs" />
+    <Compile Include="DM_CWJSBLL.cs" />
+    <Compile Include="DM_DJFFBLL.cs" />
+    <Compile Include="DM_DJZCLXBLL.cs" />
+    <Compile Include="DM_GJBLL.cs" />
+    <Compile Include="DM_HYBLL.cs" />
+    <Compile Include="DM_HYDLBLL.cs" />
+    <Compile Include="DM_HYMLBLL.cs" />
+    <Compile Include="DM_HYMXBLL.cs" />
+    <Compile Include="DM_HYZLBLL.cs" />
+    <Compile Include="DM_PZZLBLL.cs" />
+    <Compile Include="DM_TZFJJXZ.cs" />
+    <Compile Include="DM_YHQXBLL.cs" />
+    <Compile Include="DM_YPXHBLL.cs" />
+    <Compile Include="DSKHYHBLL.cs" />
+    <Compile Include="DYMXBLL.cs" />
+    <Compile Include="GNMKBBLL.cs" />
+    <Compile Include="GSKHYHBLL.cs" />
+    <Compile Include="HDXXBLL.cs" />
+    <Compile Include="HDXXBLLPartial.cs" />
+    <Compile Include="JKPZBLL.cs" />
+    <Compile Include="KKCLBLL.cs" />
+    <Compile Include="NSRFZJGBLL.cs" />
+    <Compile Include="NSRFZJGBLLPartial.cs" />
+    <Compile Include="NSRUKeyListBLL.cs" />
+    <Compile Include="NSRXXBLL.cs" />
+    <Compile Include="NSRXXDSBLL.cs" />
+    <Compile Include="NSRXXGSBLLPartial.cs" />
+    <Compile Include="NSRZJGBLL.cs" />
+    <Compile Include="NSRZJGBLLPartial.cs" />
+    <Compile Include="PrintHistoryBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QXGNBBLL.cs" />
+    <Compile Include="QXGNBDLL.cs" />
+    <Compile Include="SBBYZXXBLL.cs" />
+    <Compile Include="SBCLBLL.cs" />
+    <Compile Include="SBXMLBLL.cs" />
+    <Compile Include="SBXMLBLLPartial.cs" />
+    <Compile Include="SBXXBLL.cs" />
+    <Compile Include="SBXXSLGXBBLL.cs" />
+    <Compile Include="SBZFBLL.cs" />
+    <Compile Include="SPXXBLL.cs" />
+    <Compile Include="TZGGBLL.cs" />
+    <Compile Include="UserFunctionBLL.cs" />
+    <Compile Include="UserInfoBLL.cs" />
+    <Compile Include="USERQXBBLL.cs" />
+    <Compile Include="WLSZBLL.cs" />
+    <Compile Include="XTRZBLL.cs" />
+    <Compile Include="XTSZBLL.cs" />
+    <Compile Include="XTXXBLL.cs" />
+    <Compile Include="XTSZBLLPartial.cs" />
+    <Compile Include="YJSCLBLL.cs" />
+    <Compile Include="YWSLJGBLL.cs" />
+    <Compile Include="SBXXBLLPartial.cs" />
+    <Compile Include="SBBYZXXBLLPartial.cs" />
+    <Compile Include="YWSLJGBLLPartial.cs" />
+    <Compile Include="SBXXSLGXBBLLPartial.cs" />
+    <Compile Include="NSRXXBLLPartial.cs" />
+    <Compile Include="NSRXXDSBLLPartial.cs" />
+    <Compile Include="NSRXXGSBLL.cs" />
+    <Compile Include="DSKHYHBLLPartial.cs" />
+    <Compile Include="GSKHYHBLLPartial.cs" />
+    <Compile Include="UserInfoBLLPartial.cs" />
+    <Compile Include="USERQXBBLLPartial.cs" />
+    <Compile Include="SBCLBLLPartial.cs" />
+    <Compile Include="KKCLBLLPartial.cs" />
+    <Compile Include="SBZFBLLPartial.cs" />
+    <Compile Include="SPXXBLLPartial.cs" />
+    <Compile Include="JKPZBLLPartial.cs" />
+    <Compile Include="DYMXBLLPartial.cs" />
+    <Compile Include="YJSCLBLLPartial.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tdps.DAL\tdps.DAL.csproj">
+      <Project>{AFE3A117-703E-4E8C-B50C-C0A45656269C}</Project>
+      <Name>tdps.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tdps.Model\tdps.Model.csproj">
+      <Project>{CAB76917-F819-4088-8C53-5910649D3578}</Project>
+      <Name>tdps.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

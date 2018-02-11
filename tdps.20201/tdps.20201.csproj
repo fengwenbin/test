@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F795EF1E-0D4A-4368-B75F-691D91AACBD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tdps._20201</RootNamespace>
+    <AssemblyName>tdps.20201</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.CELL50Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonLib\AxInterop.CELL50Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ABC4000_DLL\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="tdps.DBUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ABC4000_DLL\tdps.DBUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="20201_001.cs" />
+    <Compile Include="20201_001Partial.cs" />
+    <Compile Include="20201_002.cs" />
+    <Compile Include="20201_002Partial.cs" />
+    <Compile Include="20201_003.cs" />
+    <Compile Include="20201_003Partial.cs" />
+    <Compile Include="20201_004.cs" />
+    <Compile Include="20201_004Partial.cs" />
+    <Compile Include="20201_005.cs" />
+    <Compile Include="20201_005Partial.cs" />
+    <Compile Include="20201_006.cs" />
+    <Compile Include="20201_006Partial.cs" />
+    <Compile Include="20201_007.cs" />
+    <Compile Include="20201_007Partial.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportOperation.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tdps.21601\tdps.21601.csproj">
+      <Project>{FB7AB834-5855-4B61-8B97-5A8991799B15}</Project>
+      <Name>tdps.21601</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tdps.26101\tdps.26101.csproj">
+      <Project>{AA49BF57-0845-40AD-9C51-B03F4AEDC681}</Project>
+      <Name>tdps.26101</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tdps.BLL\tdps.BLL.csproj">
+      <Project>{3EC203E2-0F7E-486A-BA59-4130A62CD7E8}</Project>
+      <Name>tdps.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tdps.Model\tdps.Model.csproj">
+      <Project>{CAB76917-F819-4088-8C53-5910649D3578}</Project>
+      <Name>tdps.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tdpsclient.common\tdpsclient.common.csproj">
+      <Project>{F18CEECD-0A62-4FF6-AA19-F832545DB942}</Project>
+      <Name>tdpsclient.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20201.cll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Note20201_1.txt" />
+    <Content Include="Resources\Note20201_2.txt" />
+    <Content Include="Resources\Note20201_3.txt" />
+    <Content Include="Resources\Note20201_4.txt" />
+    <Content Include="Resources\Note20201_5.txt" />
+    <Content Include="Resources\Note20201_6.txt" />
+    <Content Include="Resources\Note20201_7.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
